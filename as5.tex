@@ -1,0 +1,40 @@
+\documentclass[12pt]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{tcolorbox}
+
+\title{\textbf{Assignment-5}\\ \large AI1110: Probability And Random Variables\\ IIT Hyderabad}
+\author{Pathlavath Shankar (CS21BTECH11064)\\ }
+
+\begin{document}
+    \maketitle
+    \textbf{Q Papaulis 13.9} \\
+    \textit{We denote by H}s(\omega)\  and\ Hy(\omega), respectively\\
+    the\ noncausal\ estimators\ of\ the\ input s(t)\ and\\
+     its\ output y(t)\ of\ the\ system\ T(\omega)\ in\ terms\ of\\
+    the\ data\ x(t).\ Show\ that\ Hy(\omega)=\Hs(\omega)T(\omega).\\
+    
+    \textbf{Solution:-} \textit{ We need to show that the estimator of}\\
+    % Redeifination of function
+    \begin{equation}
+       y(t)=  \int_{-\infty}^{\infty} {p (t-\alpha)s(\alpha)} \,d\alpha    \ 
+     \  \ [  p(t) \Longleftrightarrow{}T(\omega)]   \   \ equals\\
+     
+     \widehat{y}(t) = \int_{-\infty}^{\infty} {p (t-\alpha)\widehat{s}(\alpha)} \,d\alpha \\
+     
+     where\ \widehat{s}(t)\ is\ the\ estimator\ of \ s(t)\\
+     
+     \textbf{Proof:} clearly,  E{[s(t) - \widehat{s}(t)]x(\xi)} = 0\\
+     
+     Hence, E{[y(t) - \widehat{y}(t)]x(\xi)} \  \  all \ t,\xi \\
+     
+     = \int_{-\infty}^{\infty} {p (t-\alpha)E({s(\alpha)-\widehat{s}(\alpha)x(\xi)}) \,d\alpha = 0
+     
+       
+       
+      
+    
+    
+\end{document}
